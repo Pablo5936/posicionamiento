@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Rubik+Distressed&display=swap');
+
+body {
+  background-image: url(../img/fondo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  font-family: 'Audiowide', sans-serif;
+  font-family: 'Rubik Distressed', sans-serif;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #000080;
+  border-bottom: 3px solid #8F00FF;
+  z-index: 1;
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Rubik Distressed', sans-serif;
+  text-shadow: 4px 4px 10px #8F00FF;
+}
+
+header>h1>b {
+  font-family: "Audiowide", sans-serif;
+}
+
+a[href="#top"] {
+  display: inline-block;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.container {
+  height: 90vh;
+  width: 100%;
+  grid-template-columns: 20% 80%;
+  display: grid;
+  grid-template-areas: "aside main";
+  margin-top: 100px;
+  gap: 5px;
+}
+
+aside {
+  grid-area: aside;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  background-color: #C0C0C0;
+  border-right: solid 2px #8F00FF;
+  padding: 20px;
+  width: 90%;
+
+}
+
+a {
+  display: flex;
+  text-decoration: none;
+  color: #000;
+  font-family: 'Audiowide', sans-serif;
+  font-size: 15px;
+}
+
+a:hover {
+  color: #8F00FF;
+}
+
+
+main {
+  grid-area: main;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+main>figure {
+  width: 24%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #B9D9EB;
+  color: #000;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  gap: 10px;
+}
+
+main>figure>img {
+  display: flex;
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+main>figure>figcaption {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+main>figure>figcaption>p {
+  font-family: 'Audiowide', sans-serif;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 10px;
+}
